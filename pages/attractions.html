@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASEAN Balik-Tanaw 2025</title>
+
+    <!-- 
+      - favicon
+    -->
+    <link rel="shortcut icon" href="../assets/images/fsc-logo-black.png" type="image/svg+xml">
+
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="attractions.css">
+
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+
+          <div class="overlay" data-overlay></div>
+
+          <a href="../index.html">
+            <img src="../assets/images/asean-emblem.png" alt="logo" width="100" height="100">
+          </a>
+
+          <nav class="navbar" data-navbar>
+
+            <div class="navbar-top">
+              <a href="../index.html" class="logo">FAITH Student Council</a>
+
+              <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+
+              <li class="navbar-item">
+                <a href="landmarks.html" class="navbar-link" data-navbar-link>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </nav>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+      </header>
+
+    <main>
+        <!-- <section class="hero attractions-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="h2 hero-title">Tanauan's Tourist Spots</h1>
+                    <p class="hero-text">
+                        Explore the beautiful destinations and attractions that make Tanauan a must-visit location. 
+                        From scenic viewpoints to natural parks, discover the hidden gems of this vibrant city.
+                    </p>
+                    <a href="../index.html" class="btn">Back to Home</a>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="section attractions-section">
+            <div class="container">
+                <h2 class="h2 section-title underline">Tourist Spots & Attractions</h2>
+                
+                <div class="attractions-grid">
+                    <div class="attraction-card" data-attraction="taal-lake">
+                        <div class="attraction-image">
+                            <img src="../assets/PLACES/Taal Lake and Volcano Viewing.webp" alt="Taal Lake & Volcano Viewing" class="w-100">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="h3 attraction-title">Taal Lake & Volcano Viewing</h3>
+                            <p class="attraction-brief">Experience breathtaking panoramic views of the iconic Taal Lake and its active volcano.</p>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card" data-attraction="eskinita-art-farm">
+                        <div class="attraction-image">
+                            <img src="../assets/PLACES/Eskinita Art Farm.jpg" alt="Eskinita Art Farm" class="w-100">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="h3 attraction-title">Eskinita Art Farm</h3>
+                            <p class="attraction-brief">A unique cultural destination that combines art, agriculture, and community.</p>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card" data-attraction="j-castles">
+                        <div class="attraction-image">
+                            <img src="../assets/PLACES/j castles.jpg" alt="J Castles Amusement Park" class="w-100">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="h3 attraction-title">J Castles Amusement Park</h3>
+                            <p class="attraction-brief">A family-friendly entertainment destination featuring exciting rides, games, and attractions.</p>
+                        </div>
+                    </div>
+<!-- 
+                    <div class="attraction-card" data-attraction="tanauan-city-park">
+                        <div class="attraction-image">
+                            <img src="../assets/images/blog-4.jpg" alt="Tanauan City Park" class="w-100">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="h3 attraction-title">Tanauan City Park</h3>
+                            <p class="attraction-brief">A well-maintained urban green space that serves as the heart of community life.</p>
+                        </div>
+                    </div> -->
+
+                    <div class="attraction-card" data-attraction="solar-power-plant">
+                        <div class="attraction-image">
+                            <img src="../assets/PLACES/solar.jpg" alt="Tanauan Solar Power Plant" class="w-100">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="h3 attraction-title">Tanauan Solar Power Plant</h3>
+                            <p class="attraction-brief">A modern showcase of sustainable energy technology and environmental innovation.</p>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card" data-attraction="sabang-river-eco-park">
+                        <div class="attraction-image">
+                            <img src="../assets/PLACES/sabang.jpeg" alt="Sabang River Eco Park" class="w-100">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="h3 attraction-title">Sabang River Eco Park</h3>
+                            <p class="attraction-brief">A serene natural retreat along the Sabang River featuring lush greenery, walking trails, and opportunities for nature observation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="attractionModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="modal-details">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div class="modal-info">
+                    <div class="info-item">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <a href="#" id="modalLocation" class="location-link" target="_blank" rel="noopener noreferrer">
+                            <span id="modalLocationText"></span>
+                            <ion-icon name="open-outline" class="external-link-icon"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2025 <a href="https://www.facebook.com/FaithSCOfficial" class="copyright-link">FAITH Student Council</a>. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <a href="../index.html" class="go-top active" aria-label="Back to Home">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+    </a>
+
+    <script src="../assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="places.js"></script>
+</body>
+</html>
